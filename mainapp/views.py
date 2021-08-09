@@ -21,3 +21,7 @@ def count(request):
 
 def example(request):
     return render(request, 'example.html')
+
+
+def rama(request):
+    return HttpResponse("Hallo brow")
