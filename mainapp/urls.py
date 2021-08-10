@@ -5,6 +5,7 @@ from . import views
 urlpatterns = [
 
     path('rama', views.rama),
+    path('example', views.example),
     path('count/<int:angka>/', views.count),
     path('second', views.second_page),
     path('', views.landing_page),
