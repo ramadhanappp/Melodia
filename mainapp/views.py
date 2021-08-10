@@ -25,3 +25,7 @@ def example(request):
 
 def rama(request):
     return HttpResponse("Hallo brow")
+
+
+def firstpage(request):
+    return render(request, "firstpage.html")

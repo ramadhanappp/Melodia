@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Toko Kardus</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type='text/css' media='screen' href="{%static 'css/style.css' %}">
+</head>
+
+<body>
+    <button class="btn btn-primary">Primary button</button>
+    <button class="btn btn-danger">second button</button>
+
+</body>
+
+</html>
+
+
+{% block content %}
+<div class='innerbox'>
+    <h1>first page</h1>
+</div>
+{% endblock content %}
