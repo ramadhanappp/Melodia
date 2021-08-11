@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Toko Kardus</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type='text/css' media='screen' href="{%static 'css/style.css' %}">
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+
+{% block content %}
+
+<div class="row">
+    <div class="col">
+        <div class="container d-flex justify-content-center">
+            <img src="{% static 'images/yessy.jpg' %}" height="300">
+            <div class="card p-5 bg-white">
+                <h1>Jomblo akut</h1>
+                <p>Dijual teman jomblo akut dengan spek :</p>
+                <p> Asal : kalimantan, Lama Jomblo : 3 tahun, Pengalaman Terakhir : diputusin</p>
+                <a class='btn btn-success'>Whatsapp</a>
+                <a class="btn btn-outline-dark">Blacklist</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
