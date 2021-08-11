@@ -1,47 +1,87 @@
 {% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html>
-
-</html>
 
 {% block content %}
-<style>
-    body {
-        background-image: url("https://cdn.pixabay.com/photo/2017/08/07/07/48/sky-2601156_960_720.jpg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-    }
-</style>
-<div class="header">
-    <div class="header-content container-lg">
-        <div class="row min-vh-100 align-items-center">
-            <div class="col-md-12">
-                <div class="profile-text text-dark">
-                    <p>Welcome, Jombls & Crocs!</p>
-                    <h1 class="fw-bold fs-1 text-danger text-uppercase">Dating Simulator</h1>
-                    <h2>From A to Z, All Types is Ready</h2>
-                    <p>Find your best and top quality partner here!</p>
-                    <button class="btn btn-danger">Get Started</button>
+<div class="header bg-light">
+    <div class="header-content card">
+        <div class="row justify-content-start align-items-center">
+            <div class="col-md-1" style="margin-top: 65px;">
+                <img src="https://www.cortguitars.com/_DATA/banner/759" width="1350">
+            </div>
+            <div class=" col">
+                <div class="row min-vh-10 align-items-start">
+                    <div class="col-md-4">
+                        <div class="profile-text-light">
+                            <p style="color: white;">#MusikAsik</p>
+                            <h1 class="fw-bold fs-1 text-uppercase" style="color: white;">MELODIA</h1>
+                            <h2 style="color: white;">Lagu, Irama, dan Intonasi</h2>
+                            <p style="color: white;">Dengan Gitar buat dunia bergetar</p>
+                            <button class="btn btn-light">Mulai Telusuri</button>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container-lg">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="text-center mt-4 mb-4">
+                <h2 class="fw-bold"> Produk </h2>
+            </div>
+        </div>
+    </div>
+    <div class="row text-center mb-4">
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="skills-item card shadow-sm p-4 rounded bg-white image-copa">
+                <img src="https://www.lakewood-guitars.com/images/guitars/arr/sungha_sig_arr.jpg" height="450px">
+                <div class="icon fs-2 my-3">
+                    <h10 style="color: black;">Cort</h10>
+                </div>
+                <h4>With Cort Get best Chords</h4>
+                <p class="text-muted">perfect sense of touch.</p>
+                <a class="btn btn-outline-danger" href="../adidas"> See More </a>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="skills-item card shadow-sm p-4 rounded bg-white image-x">
+                <img src="https://usa.yamaha.com/files/lineup-5_3de2e73fc881d7d39175b9d539f1caea.png" height="450px">
+                <div class="icon text-danger fs-2 my-3">
+                    <h10 style="color: black;"> Yamaha </h10>
+                </div>
+                <h4>Yamaha semakin di depan</h4>
+                <p class="text-muted">Freedom to Feel Every Touch</p>
+                <a class="btn btn-outline-danger" href="../nike">See More</a>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="skills-item card shadow-sm p-4 rounded bg-white image-predator">
+                <img src="https://www.lakewood-guitars.com/images/guitars/arr/ulli_sig_arr.jpg" height="450px">
+                <div class="icon text-danger fs-2 my-3">
+                    <h10 style="color: black;">Lakewood</h10>
+                </div>
+                <h4>Original are Sensasional</h4>
+                <p class="text-muted">Master control and dominate the pitch.</p>
+                <a class="btn btn-outline-danger" href="../human">See Catalog </a>
             </div>
         </div>
     </div>
 </div>
 
-
 <div class="bg">
     <div class="container-lg">
         <div class="row justify-content-center">
-            <div class="col-lg-8">
+            <div class="col-lg-6">
                 <div class="text-center mt-4 mb-4">
                     <h2 class="fw-bold"> Contact me for Support </h2>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-6">
                 <div class="card d-flex mb-3 p-3">
                     <span><img src="https://image.flaticon.com/icons/png/512/546/546394.png" width="60x"></span>
                     <h5 class="fw-bold fs-4 m-0">Email</h5>
@@ -63,30 +103,29 @@
                     <p class="text-muted m-0">@ramadhanappp</p>
                 </div>
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-6">
                 <div class="card d-flex mb-3 p-3">
-                    <span><img src="https://image.flaticon.com/icons/png/512/546/546394.png" width="60px"></span>
-                    <h5 class="fw-bold fs-4 m-0">Email</h5>
-                    <p class="text-muted m-0">ramadhanappp.bgr@gmail.com</p>
-                </div>
-                <div class="card d-flex mb-3 p-3">
-                    <span><img src="https://image.flaticon.com/icons/png/512/2111/2111532.png" width="60px"></span>
-                    <h5 class="fw-bold fs-4 m-0">Linkedin</h5>
+                    <span><img src="https://image.flaticon.com/icons/png/512/747/747374.png" width="60px"></span>
+                    <h5 class="fw-bold fs-4 m-0">Facebook</h5>
                     <p class="text-muted m-0">Ramadhana Prasetiya</p>
                 </div>
                 <div class="card d-flex mb-3 p-3">
-                    <span><img src="https://image.flaticon.com/icons/png/512/1051/1051326.png" width="60px"></span>
-                    <h5 class="fw-bold fs-4 m-0">Github</h5>
-                    <p class="text-muted m-0">ramadhanappp</p>
+                    <span><img src="https://image.flaticon.com/icons/png/512/2111/2111819.png" width="60px"></span>
+                    <h5 class="fw-bold fs-4 m-0">Twitter</h5>
+                    <p class="text-muted m-0">ramadhanappp2</p>
                 </div>
                 <div class="card d-flex mb-3 p-3">
-                    <span><img src="https://image.flaticon.com/icons/png/512/87/87390.png" width="60px"></span>
-                    <h5 class="fw-bold fs-4 m-0">Instagram</h5>
+                    <span><img src="https://image.flaticon.com/icons/png/512/684/684809.png" width="60px"></span>
+                    <h5 class="fw-bold fs-4 m-0">Store</h5>
+                    <p class="text-muted m-0">-</p>
+                </div>
+                <div class="card d-flex mb-3 p-3">
+                    <span><img src="https://image.flaticon.com/icons/png/512/1077/1077036.png" width="60px"></span>
+                    <h5 class="fw-bold fs-4 m-0">paypal</h5>
                     <p class="text-muted m-0">ramadhanappp</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 {% endblock content %}

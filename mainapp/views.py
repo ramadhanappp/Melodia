@@ -17,9 +17,12 @@ def example(request):
     return render(request, 'example.html')
 
 
-def woman(request):
-    return render(request, 'woman.html')
+def cort(request):
+    return render(request, 'cort.html')
 
 
-def man(request):
-    return render(request, "man.html")
+def yamaha(request):
+    return render(request, "yamaha.html")
+
+def lakewood(request):
+    return render(request, "lakewood.html")
