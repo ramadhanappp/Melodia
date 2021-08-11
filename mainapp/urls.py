@@ -3,7 +3,6 @@ from django.urls.resolvers import URLPattern
 from . import views
 
 urlpatterns = [
-
     path('secondpage', views.second_page),
     path('firstpage', views.first_page),
     path('rama', views.rama),

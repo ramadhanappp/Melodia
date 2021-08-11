@@ -27,9 +27,9 @@ def rama(request):
     return HttpResponse("Hallo brow")
 
 
-def first_page(request):
+def firstpage(request):
     return render(request, 'firstpage.html')
 
 
-def second_page(request):
+def secondpage(request):
     return render(request, 'secondpage.html')
