@@ -4,6 +4,7 @@ from . import views
 
 urlpatterns = [
 
+    path('firstpage', views.firstpage),
     path('rama', views.rama),
     path('example', views.example),
     path('count/<int:angka>/', views.count),
