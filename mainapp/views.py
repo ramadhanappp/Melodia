@@ -24,5 +24,10 @@ def cort(request):
 def yamaha(request):
     return render(request, "yamaha.html")
 
+
 def lakewood(request):
     return render(request, "lakewood.html")
+
+
+def akustik_yamaha(request):
+    return render(request, "akustik_yamaha.html")
