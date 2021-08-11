@@ -4,10 +4,10 @@ from . import views
 
 urlpatterns = [
 
-    path('firstpage', views.firstpage),
+    path('firstpage', views.first_page),
     path('rama', views.rama),
     path('example', views.example),
     path('count/<int:angka>/', views.count),
     path('second', views.second_page),
-    path('', views.landing_page),
+    path('', views.first_page),
 ]

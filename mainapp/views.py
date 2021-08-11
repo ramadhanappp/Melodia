@@ -6,7 +6,7 @@ from django.http import HttpResponse
 
 
 def landing_page(request):
-    return HttpResponse("hello, world")
+    return render(request, 'firstpage.html')
 
 
 def second_page(request):
@@ -27,5 +27,5 @@ def rama(request):
     return HttpResponse("Hallo brow")
 
 
-def firstpage(request):
-    return render(request, "firstpage.html")
+def first_page(request):
+    return render(request, 'firstpage.html')
