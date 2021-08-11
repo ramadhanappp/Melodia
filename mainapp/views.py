@@ -18,4 +18,8 @@ def example(request):
 
 
 def woman(request):
-    return(request, 'woman.html')
+    return render(request, 'woman.html')
+
+
+def man(request):
+    return render(request, "man.html")
