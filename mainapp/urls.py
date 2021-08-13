@@ -3,7 +3,8 @@ from django.urls.resolvers import URLPattern
 from . import views
 
 urlpatterns = [
-    path('akustik_yamaha', views.akustik_yamaha),
+    path('yamaha/akustik', views.akustik_yamaha),
+    path('yamaha/akustik/list', views.akustik_yamaha_list),
     path('lakewood', views.lakewood),
     path('yamaha', views.yamaha),
     path('cort', views.cort),

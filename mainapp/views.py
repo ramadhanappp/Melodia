@@ -1,3 +1,4 @@
+from mainapp.models import category, product
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -22,7 +23,13 @@ def cort(request):
 
 
 def yamaha(request):
-    return render(request, "yamaha.html")
+    try:
+        category_yamaha = category.objects.get(pk=1)
+        product_yamaha = product.objects.filter(category=category_yamaha)
+        return render(request, "yamaha.html", {'product_list': product_yamaha})
+
+    except:
+        return HttpResponse("error")
 
 
 def lakewood(request):
@@ -31,3 +38,7 @@ def lakewood(request):
 
 def akustik_yamaha(request):
     return render(request, "akustik_yamaha.html")
+
+
+def akustik_yamaha_list(request):
+    return render(request, 'akustik_yamaha_list.html')
