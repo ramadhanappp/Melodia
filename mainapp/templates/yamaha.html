@@ -44,17 +44,20 @@
                 <tr>
                     <th scope="col">ID Product</th>
                     <th scope="col">Name</th>
+                    <th scope="col">Category</th>
                     <th scope="col">Description</th>
                     <th scope="col">Price</th>
                 </tr>
             </thead>
             <tbody>
-                {% for items in product_list %}
+                {% for items in product_list filter %}
                 <tr>
                     <th scope="col">{{forloop.counter}}</th>
                     <th scope="col">{{items.name}}</th>
+                    <th scope="col">{{items.category.name}}</th>
                     <th scope="col">{{items.description}}</th>
                     <th scope="col">{{items.price}}</th>
+
                 </tr>
                 {% endfor %}
             </tbody>
