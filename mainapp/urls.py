@@ -20,6 +20,7 @@ urlpatterns = [
     path("api/category/get-all/", api.get_categories),
     path("api/category/create/", api.create_categories),
     path("api/product/get-all/", api.get_products),
+    path("api/review/get-all/", api.create_review),
     path("api/brand/get-all/", api.get_brands),
     path('', views.landing_page),
 
