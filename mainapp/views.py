@@ -1,4 +1,4 @@
-from mainapp.models import category, product
+from mainapp.models import brand, category, product
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -24,12 +24,15 @@ def cort(request):
 
 def yamaha(request):
     try:
-        category_yamaha = category.objects.get(pk=1)
-        product_yamaha = product.objects.filter(category=category_yamaha)
-        return render(request, "yamaha.html", {'product_list': product_yamaha})
-
+        print(request.GET)
+        brand_gitar = brand.objects.get(pk=2)
+        product_gitar = product.objects.filter(merk=brand_gitar)
+        if (product_gitar.count() != 0):
+            return render(request, "yamaha.html", {"product_list": product_gitar, "available": True})
+        else:
+            return render(request, "yamaha.html", {"available": False})
     except:
-        return HttpResponse("error")
+        return HttpResponse("ERROR")
 
 
 def lakewood(request):
